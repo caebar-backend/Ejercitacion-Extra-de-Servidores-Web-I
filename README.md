@@ -1,6 +1,6 @@
 # Actividad: Servidor HTTP con Node.js
 
-Este proyecto es una actividad práctica para poner en práctica los conocimientos sobre la creación de servidores HTTP
+Este proyecto es una actividad para poner en práctica los conocimientos sobre la creación de servidores HTTP
 
 # Guía del Estudiante: Servidor HTTP con Node.js
 
@@ -8,7 +8,7 @@ Esta guía te ayudará a completar la actividad práctica sobre servidores HTTP 
 
 ## Antes de Empezar
 
-Asegúrate de tener instalados:
+Asegurate de tener instalados:
 - Node.js (versión 14.0.0 o superior)
 - npm (viene incluido con Node.js)
 - Un editor de código (como VS Code, Sublime Text, etc.)
@@ -17,32 +17,32 @@ Asegúrate de tener instalados:
 
 ### 1. Preparación del Entorno
 
-1. Clona el repositorio del proyecto:
+1. Cloná el repositorio del proyecto:
    ```
    git clone <url-del-repositorio>
    ```
 
-2. Navega al directorio del proyecto:
+2. Navegá al directorio del proyecto:
    ```
    cd node-http-server-assignment
    ```
 
-3. Instala las dependencias:
+3. Instalá las dependencias:
    ```
    npm install
    ```
 
 ### 2. Comprensión de los Requisitos
 
-Revisa detenidamente el archivo README.md para entender lo que se espera que implementes. En resumen:
+Revisá detenidamente el archivo README.md para entender lo que se espera que implementes. En resumen:
 
-- Debes crear un servidor HTTP que maneje 3 rutas específicas y un caso para rutas no definidas
+- Debés crear un servidor HTTP que maneje 3 rutas específicas y un caso para rutas no definidas
 - Cada ruta debe devolver un tipo específico de contenido (texto plano o JSON)
-- Debes configurar correctamente los encabezados y códigos de estado HTTP
+- Debés configurar correctamente los encabezados y códigos de estado HTTP
 
 ### 3. Exploración de la Estructura del Proyecto
 
-Familiarízate con los archivos del proyecto:
+Familiarizate con los archivos del proyecto:
 
 - `server.js`: Aquí configurarás el servidor HTTP principal
 - `src/routes.js`: Aquí implementarás los manejadores de cada ruta
@@ -103,7 +103,7 @@ Analiza los resultados:
 
 ### 5. Consejos para Resolver Problemas Comunes
 
-- **Encabezados HTTP**: Asegúrate de establecer `Content-Type` correctamente:
+- **Encabezados HTTP**: Asegurate de establecer `Content-Type` correctamente:
   - Para texto: `'text/plain; charset=utf-8'`
   - Para JSON: `'application/json'`
 
