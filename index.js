@@ -4,6 +4,8 @@
  */
 const createServer = require('./src/server');
 
+const chalk = require('chalk')
+
 // Puerto en el que escuchará el servidor
 const PORT = 3000;
 
@@ -12,10 +14,10 @@ const server = createServer();
 
 // Iniciar el servidor
 server.listen(PORT, () => {
-  console.log(`Servidor escuchando en http://localhost:${PORT}/`);
-  console.log(`Servidor escuchando en http://localhost:${PORT}/productos`);
-  console.log(`Servidor escuchando en http://localhost:${PORT}/contacto`);
-  console.log('Presiona Ctrl+C para detener el servidor');
+  console.log(chalk.bgGray(`Servidor escuchando en http://localhost:${PORT}/`));
+  console.log(chalk.gray(`Servidor escuchando en http://localhost:${PORT}/productos`));
+  console.log(chalk.bgGray(`Servidor escuchando en http://localhost:${PORT}/contacto`));
+  console.log(chalk.gray('Presiona Ctrl+C para detener el servidor'));
 });
 
 // Exportar el servidor para pruebas

@@ -1,20 +1,22 @@
 const request = require('supertest');
-const server = require('../server');
+const server = require('../index');
 const { getProducts } = require('../src/models/products');
-
+/*
 // Start the server before running tests
 beforeAll((done) => {
   server.listen(0, () => {  // Using port 0 lets the OS assign an available port
     done();
   });
 });
+*/
+
 
 // Cierra el servidor después de todas las pruebas
 afterAll((done) => {
   server.close(done);
 });
 
-describe('Servidor HTTP', () => {
+//describe('Servidor HTTP', () => {
   
   describe('Ruta /', () => {
     test('debería devolver el mensaje de bienvenida', async () => {
@@ -79,4 +81,4 @@ describe('Servidor HTTP', () => {
       expect(response.status).toBe(404);
     });
   });
-});
+//});
